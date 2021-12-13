@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Snake and Ladders</title>
+    <script src="main.js" type="module"></script>
+</head>
+
+<body>
+    <div class="clsImg">
+        <div>
+            <canvas id="myCanvas" style="border:1px solid #d3d3d3;">
+                Your browser does not support the HTML5 canvas tag.
+            </canvas>
+
+            <section class="users">
+                <label id="lblNplayer"> Waiting players:</label>
+                <img id="playerB" src='./playerB.png' height="20px" style="display: none;">
+                <img id="playerR" src='./playerR.png' height="20px" style="display: none;">
+                <img id="playerG" src='./playerG.png' height="20px" style="display: none;">
+                <img id="playerY" src='./playerY.png' height="20px" style="display: none;">
+            </section>
+            <section class="newUser">
+                <label id="lblNplayer"> CHOOSE PLAYER</label>
+                <img id="playerBc" src='./playerB.png' height="20px">
+                <img id="playerRc" src='./playerR.png' height="20px">
+                <img id="playerGc" src='./playerG.png' height="20px">
+                <img id="playerYc" src='./playerY.png' height="20px">
+
+
+            </section>
+            <hr />
+
+        </div>
+        <div>
+            <section class="newGame">
+                <div id="ui_dado">
+                    <div id="platform">
+                        <div id="dice">
+                            <div class="side front">
+                                <div class="dot center"></div>
+                            </div>
+                            <div class="side front inner"></div>
+                            <div class="side top">
+                                <div class="dot dtop dleft"></div>
+                                <div class="dot dbottom dright"></div>
+                            </div>
+                            <div class="side top inner"></div>
+                            <div class="side right">
+                                <div class="dot dtop dleft"></div>
+                                <div class="dot center"></div>
+                                <div class="dot dbottom dright"></div>
+                            </div>
+                            <div class="side right inner"></div>
+                            <div class="side left">
+                                <div class="dot dtop dleft"></div>
+                                <div class="dot dtop dright"></div>
+                                <div class="dot dbottom dleft"></div>
+                                <div class="dot dbottom dright"></div>
+                            </div>
+                            <div class="side left inner"></div>
+                            <div class="side bottom">
+                                <div class="dot center"></div>
+                                <div class="dot dtop dleft"></div>
+                                <div class="dot dtop dright"></div>
+                                <div class="dot dbottom dleft"></div>
+                                <div class="dot dbottom dright"></div>
+                            </div>
+                            <div class="side bottom inner"></div>
+                            <div class="side back">
+                                <div class="dot dtop dleft"></div>
+                                <div class="dot dtop dright"></div>
+                                <div class="dot dbottom dleft"></div>
+                                <div class="dot dbottom dright"></div>
+                                <div class="dot center dleft"></div>
+                                <div class="dot center dright"></div>
+                            </div>
+                            <div class="side back inner"></div>
+                            <div class="side cover x"></div>
+                            <div class="side cover y"></div>
+                            <div class="side cover z"></div>
+                        </div>
+                    </div>
+                </div>
+                <div style="display: flex; flex-flow: row nowrap;">
+                    <p id="result" style="display: block;"></p>
+                    <p id="next-player" class="result">Next</p>
+                </div>
+                <hr />
+                <div>
+                    <label id="lbld"
+                        style="width: 200px;word-wrap: break-word; white-space: normal;display: inline-block;">
+                    </label>
+                    <hr />
+                    <input id="inpt" style="border: none;" />
+                </div>
+            </section>
+        </div>
+    </div>
+    <img id="snakeundladder" src='./snakeundladder.jpg' style="display: none;">
+</body>
+
+</html>
